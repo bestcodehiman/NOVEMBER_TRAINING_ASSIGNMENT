@@ -1,4 +1,4 @@
-Answers:
+### Answers:
  
 1. select salary from employee where salary >300000;
 2. select distinct(department) from employee ;
