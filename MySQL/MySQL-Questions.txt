@@ -2,7 +2,7 @@
  
 1. select salary from employee where salary >300000;
 2. select distinct(department) from employee ;
-3. select * from employee where department IN ("IT","Testing");
+3. select * from employee where department IN ('IT','Testing');
 4. select department from employee order by department DESC;
 5. create table if not exists employee(id int, name varchar(255), designation varchar(255), salary int, address varchar(255),department varchar(255));
 6. 1) select * from employee where salary = (select max(salary) from employee); 
