@@ -1,0 +1,21 @@
+Answers:
+ 
+1. select salary from employee where salary >300000;
+2. select distinct(department) from employee ;
+3. select * from employee where department IN ("IT","Testing");
+4. select department from employee order by department DESC;
+5. create table if not exists employee(id int, name varchar(255), designation varchar(255), salary int, address varchar(255),department varchar(255));
+6. 1) select * from employee where salary = (select max(salary) from employee); 
+   2) select * from employee where salary = (select min(salary) from employee);
+7. select department from employee order by department DESC;
+8. select name, department, COUNT(*) from employee group by department having COUNT(*)>2 order by id desc;
+9. 1) create database himanshu;
+   2) use himanshu; 
+   3) create table employee(id int, name varchar(255), designation varchar(255), salary int, address varchar(255), department varchar(255)); 
+   4) show tables; 
+   5) drop table employee;
+10. select * from employee where * designation='Manager' and salary between 200000 and 300000;
+11. update employee set salary=salary+20000 where department='Accounts';
+12. select * from employee where name is not null;
+13. select * from employee where doj is null;
+14. SELECT id FROM employee WHERE id > ANY (SELECT rollno FROM student);
