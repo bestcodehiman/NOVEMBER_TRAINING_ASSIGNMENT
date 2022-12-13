@@ -19,3 +19,5 @@
 12. select * from employee where name is not null;
 13. select * from employee where doj is null;
 14. SELECT id FROM employee WHERE id > ANY (SELECT rollno FROM student);
+
+
